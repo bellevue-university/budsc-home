@@ -5,7 +5,13 @@ tiles:
   img: "logos/hublogo.svg"
   bg_color: "#ffffff"
   txt_color: "#000000"
-#-
+
+-
+  name: "dgraph"
+  url: "https://ratel.budsc.midwest-datascience.com"
+  img: "logos/dgraph.png"
+  bg_color: "#ffffff"
+  txt_color: "#000000"
 #  name: "minio"
 #  url: "https://storage.budsc.midwest-datascience.com"
 #  img: "logos/minio.png"
