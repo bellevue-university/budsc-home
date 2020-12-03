@@ -12,6 +12,13 @@ tiles:
   img: "logos/dgraph.png"
   bg_color: "#ffffff"
   txt_color: "#000000"
+
+- name: "redash"
+  url: "https://redash.budsc.midwest-datascience.com"
+  img: "logos/redash.png"
+  bg_color: "#ffffff"
+  txt_color: "#000000"
+
 #  name: "minio"
 #  url: "https://storage.budsc.midwest-datascience.com"
 #  img: "logos/minio.png"
