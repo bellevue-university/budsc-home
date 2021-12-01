@@ -130,6 +130,5 @@ dmypy.json
 
 # Hugo build
 /hugo-site/public/
+.hugo_build.lock
 
-# Jetbrains
-.idea/
