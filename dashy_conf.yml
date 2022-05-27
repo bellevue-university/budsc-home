@@ -65,26 +65,3 @@ sections:
     description: Master of Science Data Science Degree
     url: https://www.bellevue.edu/degrees/bachelor/data-science-ms/
     icon: fas fa-user-graduate
-- name: Social Media
-  icon: fas fa-hashtag
-  items:
-  - title: Facebook
-    description: BU's Facebook account
-    icon: si-facebook
-    url: https://www.facebook.com/BellevueUniversity
-  - title: LinkedIn
-    description: BU's LinkedIn account
-    icon: si-linkedin
-    url: https://www.linkedin.com/edu/school?id=18818&trk=tyah&trkInfo=tarId%3A1396281822128%2Ctas%3Abellevue%20university%2Cidx%3A4-1-5
-  - title: Youtube
-    description: BU's Youtube account
-    icon: si-youtube
-    url: https://www.youtube.com/user/bellevueuniversity
-  - title: Instagram
-    description: BU's Instagram account
-    icon: si-instagram
-    url: https://instagram.com/bellevueuniversity/
-  - title: Twitter
-    description: BU's Twitter account
-    icon: si-twitter
-    url: https://twitter.com/BellevueU
