@@ -5,6 +5,7 @@
 #################################################################################
 
 PROJECT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
+CONFIG_FILE = $(PROJECT_DIR)/resources/config/budsc-home.yml
 DASHY_DIR = $(PROJECT_DIR)/dashy
 PROFILE = default
 PROJECT_NAME = budsc-home
@@ -14,9 +15,36 @@ PYTHON_INTERPRETER = python3
 # COMMANDS                                                                      #
 #################################################################################
 
-## Reset changes in dashy directory
-reset:
+## Build dashy dashboard
+build: install
+	cp $(CONFIG_FILE) $(DASHY_DIR)/public/conf.yml
+	cd $(DASHY_DIR); yarn build
+
+## Build docker image
+build-image: build
+	docker build -t budsc-home .
+
+## Clean working files
+clean: remove
+	rm -rf $(DASHY_DIR)/dist
 	cd $(DASHY_DIR); git reset --hard
+
+## Install dashy dependencies
+install:
+	cd $(DASHY_DIR); yarn
+
+## Serve dashy dashboard
+serve: build
+	cd $(DASHY_DIR); yarn start
+
+## Serve dashboard using Docker image
+serve-image: build-image
+	docker run -d -p 8000:80 --name budsc_home budsc-home
+	open http://localhost:8000/
+
+## Stop and remove Docker Image
+remove:
+	docker stop budsc_home || true && docker rm budsc_home || true
 
 #################################################################################
 # PROJECT RULES                                                                 #
