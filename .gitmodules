@@ -1,0 +1,3 @@
+[submodule "dashy"]
+	path = dashy
+	url = git@github.com:bellevue-university/dashy.git

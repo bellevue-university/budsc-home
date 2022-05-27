@@ -1,0 +1,67 @@
+---
+# Page meta info, like heading, footer text and nav links
+pageInfo:
+  title: BUDSC
+  description: Bellevue University Data Science Cluster
+
+# Optional app settings and configuration
+appConfig:
+  hideComponents:
+    hideSettings: true
+  webSearch:
+    disableWebSearch: true
+  theme: default
+  iconSize: medium
+  statusCheck: false
+  disableConfiguration: true
+  preventWriteToDisk: true
+  preventLocalSave: true
+
+# Main content - An array of sections, each containing an array of items
+sections:
+- name: Data Science
+  icon: fas fa-flask
+  items:
+  - title: JupyterHub
+    description: Hosted version of Jupyter notebook
+    icon: si-jupyter
+    url: https://jupyter.budsc.midwest-datascience.com
+  - title: MinIO Storage
+    description: High Performance, Kubernetes Native Object Storage
+    icon: si-amazons3
+    url: https://storage.budsc.midwest-datascience.com
+  - title: DSC 400 Github Repo
+    description: Code and docs for DSC 400
+    url: https://github.com/bellevue-university/dsc400/
+    icon: si-github
+  - title: DSC 650 Github Repo
+    description: Code and docs for DSC 650
+    url: https://github.com/bellevue-university/dsc650/
+    icon: si-github
+- name: Bellevue University
+  icon: fas fa-school
+  items:
+  - title: Cyberactive
+    description: BU's Learning Management System
+    icon: fas fa-chalkboard
+    url: https://cyberactive.bellevue.edu/
+  - title: Bellevue University
+    description: Real learning for real life
+    icon: fas fa-user-graduate
+    url: https://www.bellevue.edu/
+  - title: Bruin Connect
+    description: Single-Sign On
+    icon: fas fa-user
+    url: https://bruinconnect.bellevue.edu/
+  - title: Service Desk
+    description: Submit service requests
+    icon: fas fa-list
+    url: https://servicedesk.bellevue.edu/
+  - title: DSC BS
+    description: Bachelor of Science Data Science Degree
+    url: https://www.bellevue.edu/degrees/bachelor/data-science-bs/
+    icon: fas fa-user-graduate
+  - title: DSC MS
+    description: Master of Science Data Science Degree
+    url: https://www.bellevue.edu/degrees/bachelor/data-science-ms/
+    icon: fas fa-user-graduate

@@ -1,9 +1,0 @@
-baseURL = "https://home.budsc.midwest-datascience.com"
-languageCode = "en-us"
-title = "BU Data Science Cluster"
-
-theme = "slate"
-
-[ params ]
-Favicon = "favicon.ico"
-OpenLinksInNewWindow = true
